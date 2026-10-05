@@ -1,0 +1,27 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>O Desafio de Platão — Sólidos Platônicos</title><link rel="stylesheet" href="style.css"></head><body>
+<section id="start" class="screen active"><div class="wrap">
+<div class="top"><div class="brand">🏛 O DESAFIO DE PLATÃO</div><div class="pill">Ensino Médio • 40 questões</div></div>
+<div class="hero"><div class="heroArt"></div><div><div class="kicker">GEOMETRIA ESPACIAL • JOGO DIGITAL</div><h1>A Jornada dos<br>Sólidos Platônicos</h1>
+<p class="lead">Platão convoca você para uma jornada pela geometria. Tetraedro, cubo, octaedro, dodecaedro e icosaedro formam um círculo de energia — e cada fase exige mais conhecimento.</p>
+<div class="energyRow"><div class="solid">△</div><div class="solid">□</div><div class="solid">◇</div><div class="solid">⬠</div><div class="solid">✧</div></div>
+<button class="cta" onclick="show('map')">VER MAPA DA AVENTURA</button> <button class="cta" onclick="start()">ACEITAR O DESAFIO</button></div></div>
+<div class="phases"><div class="phaseCard"><b>FASE I — TEMPLO DAS FORMAS</b>Reconhecimento, faces e propriedades.</div><div class="phaseCard"><b>FASE II — ÁGORA DE EULER</b>Faces, arestas, vértices e relação de Euler.</div><div class="phaseCard"><b>FASE III — ACADEMIA DE PLATÃO</b>Áreas, volumes, dualidade e desafios finais.</div></div>
+</div></section>
+
+<section id="map" class="screen">
+  <div class="mapPage">
+    <img src="mapa-aventura.png" class="mapImage" alt="Mapa visual das três fases do jogo O Desafio de Platão">
+    <div class="mapActions">
+      <button class="cta" onclick="show('start')">← VOLTAR</button>
+      <button class="cta" onclick="start()">INICIAR AVENTURA →</button>
+    </div>
+  </div>
+</section>
+
+<section id="game" class="screen"><div class="gameHeader"><div class="wrap"><div class="top"><div class="brand">🏛 O DESAFIO DE PLATÃO</div><div class="pill">❤️ <span id="lives">3</span> &nbsp; ⭐ <span id="score">0</span></div></div><div class="progress"><i id="bar"></i></div></div></div>
+<div class="wrap stage"><aside class="guide"><div class="guideImg"></div><p class="speech">“A geometria revela a ordem das formas. Mostre que é digno de atravessar a Academia.”</p></aside>
+<article class="quiz"><div class="meta"><span id="meta"></span><span>⚡ DESAFIO GEOMÉTRICO</span></div><h2 id="q"></h2><div id="opts"></div><div id="feedback"></div><button class="cta" id="next" onclick="next()">PRÓXIMO DESAFIO →</button></article></div></section>
+<section id="phase" class="screen"><div class="center"><div class="big">🏺⚡</div><h1 id="pt"></h1><p id="pp"></p><button class="cta" onclick="go()">ENTRAR NA PRÓXIMA FASE</button></div></section>
+<section id="end" class="screen"><div class="center"><div class="big">🏛️🏆</div><h1>Platão reconhece sua jornada!</h1><p id="result"></p><div class="medal" id="medal"></div><button class="cta" onclick="location.reload()">JOGAR NOVAMENTE</button></div></section>
+<script src="game.js"></script></body></html>

@@ -1,0 +1,38 @@
+
+*{box-sizing:border-box}
+:root{--gold:#f2bd52;--gold2:#ffe39a;--navy:#06142b;--blue:#0b2b57;--paper:#e9c98e;--ink:#24190d}
+body{margin:0;min-height:100vh;color:#fff;font-family:Georgia,"Times New Roman",serif;background:
+linear-gradient(#06152be8,#07142df2),url('platao-poster.png') center/cover fixed}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at 50% 20%,#0b5ca455,transparent 38%)}
+button{font:700 16px Arial,sans-serif;cursor:pointer}
+.screen{display:none;min-height:100vh}.screen.active{display:block}
+.wrap{max-width:1180px;margin:auto;padding:24px}
+.top{display:flex;justify-content:space-between;align-items:center;gap:15px}
+.brand{font-weight:900;letter-spacing:1px;color:var(--gold2)}
+.pill{background:#07182ddd;border:1px solid #d9a63e88;border-radius:30px;padding:10px 15px;font-family:Arial}
+.hero{min-height:610px;display:grid;grid-template-columns:45% 55%;align-items:center;gap:30px}
+.heroArt{min-height:560px;border:4px solid #d3a447;border-radius:24px;background:url('platao-poster.png') center 26%/cover;box-shadow:0 25px 80px #000b,inset 0 0 70px #0008;position:relative;overflow:hidden}
+.heroArt:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 55%,#06142b)}
+.kicker{font:800 13px Arial;letter-spacing:4px;color:#f5cc70}
+h1{font-size:58px;line-height:.98;margin:12px 0;color:var(--gold2);text-shadow:0 3px 0 #734614,0 0 28px #df9c2b55}
+h2{font-size:28px;color:#fff}.lead{font-size:19px;line-height:1.6;color:#e7e0d0}
+.cta{padding:16px 24px;border:1px solid #ffe8a0;border-radius:10px;color:#211405;background:linear-gradient(#ffe08b,#c98a25);box-shadow:0 5px 0 #75470e}
+.phases{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:22px}
+.phaseCard{background:#07182de8;border:1px solid #cba14888;padding:16px;border-radius:14px;font-family:Arial}.phaseCard b{display:block;color:var(--gold);margin-bottom:7px}
+.gameHeader{position:sticky;top:0;z-index:4;background:#06142bef;backdrop-filter:blur(8px);border-bottom:1px solid #d0a24366}
+.progress{height:8px;background:#293752;border-radius:9px;overflow:hidden;margin-top:12px}.progress i{display:block;height:100%;background:linear-gradient(90deg,#f0a52e,#ffe899);width:0;transition:.3s}
+.stage{display:grid;grid-template-columns:300px 1fr;gap:22px;padding-top:28px}
+.guide,.quiz{background:#07182ee8;border:1px solid #d5aa5266;border-radius:18px;box-shadow:0 15px 45px #0008}
+.guide{overflow:hidden}.guideImg{height:320px;background:url('platao-poster.png') 50% 43%/190% auto}.speech{margin:0;padding:20px;font-style:italic;line-height:1.5;color:#f3dfb0}
+.quiz{padding:28px;min-height:560px}.meta{font:800 13px Arial;color:#f3c760;letter-spacing:1px;display:flex;justify-content:space-between}
+.quiz h2{font-family:Arial,sans-serif;font-size:27px;line-height:1.35;margin:30px 0}
+.option{display:block;width:100%;text-align:left;border:1px solid #61708d;background:#13284a;color:#fff;border-radius:11px;padding:15px 17px;margin:10px 0;box-shadow:none}
+.option:hover{background:#1d3a68;border-color:#e3ba5c}.option.correct{background:#18593b;border-color:#72e39c}.option.wrong{background:#702c35;border-color:#ff8995}
+#feedback{min-height:70px;padding:15px 0;font:600 16px/1.5 Arial;color:#ffe29b}#next{display:none}
+.energyRow{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:25px auto}.solid{width:90px;height:90px;border:2px solid #ffe18a;border-radius:50%;display:grid;place-items:center;background:#0a2750;box-shadow:0 0 22px #2da5ff;font-size:38px}
+.center{text-align:center;padding:90px 20px}.center p{max-width:720px;margin:18px auto;font-size:19px;line-height:1.6}.big{font-size:90px}.medal{font-size:80px}
+@media(max-width:800px){.hero,.stage{grid-template-columns:1fr}.heroArt{min-height:430px}.phases{grid-template-columns:1fr}.guide{display:none}h1{font-size:40px}.wrap{padding:15px}}
+
+.mapPage{max-width:1500px;margin:auto;padding:18px;text-align:center}
+.mapImage{display:block;width:100%;height:auto;border:3px solid #d8aa4b;border-radius:18px;box-shadow:0 20px 70px #000c}
+.mapActions{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;padding:18px 0 35px}
